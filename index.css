@@ -1,0 +1,170 @@
+@import url(https://fonts.google.com/specimen/Inter);
+
+:root{
+--Soft-orange: hsl(35, 77%, 62%);
+--Soft-red: hsl(5, 85%, 63%);
+
+--Off-white: hsl(36, 100%, 99%);
+--Grayish-blue: hsl(233, 8%, 79%);
+--Dark-grayish-blue: hsl(236, 13%, 42%);
+--Very-dark-blue: hsl(240, 100%, 5%);
+}
+
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  font-family: 'Inter', sans-serif;
+  /* display: grid; */
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    margin: auto;
+    margin-bottom: 20px;
+    gap: 300px;
+}
+
+img{
+    background-size: 100%;
+    width: 130px;
+    height: 190px;
+}
+ul{
+ display: flex;
+ flex-direction: row;
+ gap: 19px;
+}
+p{
+    Font-size: 15px;
+}
+li{
+    list-style: none;
+}
+li:hover{
+    color: var(--Soft-orange);
+    cursor: pointer;
+}
+
+
+.content{
+    display: flex;
+    flex-direction: row;
+   
+    margin-left: 140px;
+   margin-bottom: 50px;
+    gap: 50px;
+}
+.cont1{
+    width: 600px;
+}
+#img1{
+    width: 600px;
+    height: 250px;
+    background-size: 100%;
+}
+#p2{
+    font-weight: 800;
+    font-size: xx-large;
+    width: 200px;
+}
+.note{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    
+}
+.dive{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    color: hsl(225, 2%, 37%);
+}
+button{
+    color: white;
+    background: black;
+    cursor: pointer;
+    border: none;
+    width: 150px;
+    height: 50px;
+}
+button:hover{
+    background: var(--Soft-orange);
+}
+.cont2{
+    background: var(--Very-dark-blue);
+    align-items: center;
+    padding: 16px;
+    width: 300px;
+    /* height: 350px; */
+    gap: 200px;
+}
+#h{
+    color: hsl(225, 2%, 37%);
+}
+h3{
+    font-size: x-large;
+    color: var(--Soft-orange);
+}
+section{
+    color: rgb(151, 155, 155);
+}
+
+#pmid{
+    color: white;
+    font-weight: 700;
+}
+
+#pmid:hover{
+    color: var(--Soft-orange);
+    cursor: pointer;
+}
+
+.foot{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 80%;
+    margin-left: 140px;
+}
+#foot1{
+    display: flex;
+    flex-direction: row;
+    width: 390px;
+    height: 200px;
+    gap: 10px;
+
+}
+.foo{
+    flex-direction: column;
+    gap: -0;
+}
+#pmi{
+
+    font-weight: 700;
+    font-size: larger;
+}
+
+#pmi:hover{
+    color: var(--Soft-red);
+    cursor: pointer;
+}
+
+
+@media screen and(max-width:556px) {
+    /* /ul{
+        display: flex;
+        flex-direction: column;
+    } */
+    nav{
+        width: 100%;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+}
